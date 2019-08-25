@@ -21,9 +21,9 @@ const path = {
         fonts: 'build/fonts/'
     },
     src: {
-        html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+        html: 'src/*.html',
         styles: 'src/styles/main.scss',
-        img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+        img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
@@ -41,8 +41,7 @@ const config = {
     },
     tunnel: false,
     host: '0.0.0.0',
-    port: 9000,
-    logPrefix: "Frontend_Devil"
+    port: 9000
 };
 
 gulp.task('html:build', function () {
@@ -92,7 +91,7 @@ gulp.task('build', [
 
 gulp.task('watch', function() {
     gulp.watch(path.watch.html, ['html:build']);
-    gulp.watch(path.watch.styles, ['style:build']);
+    gulp.watch(path.watch.styles, ['styles:build']);
     gulp.watch(path.watch.img, ['image:build']);
     gulp.watch(path.watch.fonts, ['fonts:build']);
 });
