@@ -1,5 +1,5 @@
 {
-  "name": "DnD Helper",
+  "name": "dnd_helper",
   "version": "1.0.0",
   "description": "html/scss gulp builder for DnD helper",
   "repository": "https://github.com/chaoticsparks/dndhelper_static",
@@ -10,15 +10,15 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-clean-css": "^3.9.0",
-    "gulp-imagemin": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-imagemin": "^6.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^3.0.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.0"
