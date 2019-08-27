@@ -10,6 +10,7 @@ const gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require("browser-sync"),
     plumber = require('gulp-plumber'),
+    gulpStylelint = require('gulp-stylelint'),
     reload = browserSync.reload;
 
 
@@ -62,6 +63,16 @@ gulp.task('styles:build', function () {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
+});
+
+gulp.task('styles:lint', function lintCssTask() {
+    return gulp
+        .src(path.src.styles)
+        .pipe(gulpStylelint({
+            reporters: [
+                {formatter: 'verbose', console: true}
+            ]
+        }));
 });
 
 gulp.task('image:build', function () {
