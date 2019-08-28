@@ -1,9 +1,22 @@
 {
+  "plugins": [
+    "stylelint-order"
+  ],
   "extends": [
     "stylelint-config-recommended-scss",
-    "stylelint-config-airbnb"
+    "stylelint-config-airbnb",
+    "stylelint-config-prettier"
   ],
   "rules": {
+    "order/order": [
+      "dollar-variables",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      "rules"
+    ],
     "at-rule-empty-line-before": null
   }
 }

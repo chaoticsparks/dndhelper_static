@@ -4,24 +4,22 @@ https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture
 */
 
 // Settings – used with preprocessors and contain font, colors definitions, etc.
-@import "01_settings/breakpoints";
-@import "01_settings/colors";
+@import '01_settings/breakpoints';
 
 // Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
-@import "02_tools/functions";
-@import "02_tools/mixins";
+@import '02_tools/functions';
+@import '02_tools/mixins';
 
 /*
 Generic – reset and/or normalize styles, box-sizing definition, etc.
 This is the first layer which generates actual CSS.
 */
-@import "../../node_modules/normalize.css/normalize.css";
+@import '../../node_modules/normalize.css/normalize.css';
 
 /*
 Elements – styling for bare HTML elements (like H1, A, etc.).
 These come with default styling from the browser so we can redefine them here.
 */
-
 
 // Global
 
