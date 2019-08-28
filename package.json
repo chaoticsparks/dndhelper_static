@@ -9,6 +9,14 @@
     "start": "gulp",
     "styles:lint": "stylelint src/styles/**/*.scss"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/styles/**/*.scss": "stylelint"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^4.0.2",
@@ -19,6 +27,8 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.1",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.5",
     "rimraf": "^3.0.0",
     "stylelint": "^10.1.0",
     "stylelint-config-airbnb": "0.0.0",
