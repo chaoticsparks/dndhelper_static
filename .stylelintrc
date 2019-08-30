@@ -1,13 +1,17 @@
 {
   "plugins": [
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin",
+    "stylelint-at-rule-no-children"
   ],
   "extends": [
     "stylelint-config-recommended-scss",
     "stylelint-config-airbnb",
+    "stylelint-config-rational-order",
     "stylelint-config-prettier"
   ],
   "rules": {
+    "aditayvm/at-rule-no-children": true,
     "order/order": [
       "dollar-variables",
       "declarations",
@@ -31,6 +35,10 @@
       },
       "rules"
     ],
+    "order/properties-order": [],
+    "plugin/rational-order": [true, {
+      "empty-line-between-groups": true
+    }],
     "at-rule-empty-line-before": null
   }
 }

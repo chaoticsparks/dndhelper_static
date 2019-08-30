@@ -36,8 +36,10 @@
     "prettier": "^1.18.2",
     "rimraf": "^3.0.0",
     "stylelint": "^10.1.0",
+    "stylelint-at-rule-no-children": "^0.3.1",
     "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-order": "^3.0.1",
     "stylelint-scss": "^3.10.0"
