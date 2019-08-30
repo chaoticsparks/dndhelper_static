@@ -11,9 +11,23 @@
     "order/order": [
       "dollar-variables",
       "declarations",
+      "at-rules",
       {
         "type": "at-rule",
-        "name": "include"
+        "name": "include",
+        "parameter": "breakpoint"
+      },
+      {
+        "type": "rule",
+        "selector": "^&::(before|after)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
       },
       "rules"
     ],
